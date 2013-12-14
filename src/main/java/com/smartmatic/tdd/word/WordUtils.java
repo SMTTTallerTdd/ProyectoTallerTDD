@@ -24,4 +24,19 @@ public class WordUtils {
 			result += "_";
 		return result;
 	}
+	
+	public String replaceLetters(String guess, String word, String letter) {
+		
+		if(!word.contains(letter))
+			return guess;
+		
+		StringBuilder myName = new StringBuilder(guess);
+		for (int index = word.indexOf(letter);
+			     index >= 0;
+			     index = word.indexOf(letter, index + 1))
+		{
+			myName.setCharAt(index,letter.charAt(0));
+		}
+		return myName.toString();
+	}
 }

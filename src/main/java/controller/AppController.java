@@ -49,7 +49,7 @@ public class AppController {
 			guess=utils.fillGuess(word);
 		
 		if(letter!=null){
-			String newGuess=replaceLetters(guess,word,letter);
+			String newGuess=utils.replaceLetters(guess,word,letter);
 			if(newGuess.equals(guess))
 				oportunities --;
 			else
@@ -64,15 +64,5 @@ public class AppController {
 		model.addAttribute("word", word);
 		model.addAttribute("goodletter", goodLetter);
 		return "game";
-	}
-
-	private String replaceLetters(String guess, String word, String letter) {
-		
-		if(!word.contains(letter))
-			return guess;
-		
-		StringBuilder myName = new StringBuilder(guess);
-		myName.setCharAt(word.indexOf(letter),letter.charAt(0));
-		return myName.toString();
 	}
 }
