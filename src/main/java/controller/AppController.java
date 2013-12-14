@@ -11,7 +11,10 @@ import com.smartmatic.tdd.word.WordUtils;
 public class AppController {
 
 	@RequestMapping("/")
-	public String home(@RequestParam("name")String name,ModelMap model){
+	public String home(org.springframework.web.context.request.WebRequest webRequest,ModelMap model){
+		String name= webRequest.getParameter("word");
+		if(name==null)
+			return "home";
 		WordUtils utils = new WordUtils();
 		if(!utils.isValidWord(name)){
 			model.addAttribute("error", name);

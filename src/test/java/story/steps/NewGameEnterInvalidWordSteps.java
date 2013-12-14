@@ -26,18 +26,18 @@ public class NewGameEnterInvalidWordSteps {
 		webdriver.close();
 	}
 	
-	@Given("estoy en el home")
+	@Given("estoy en el home2")
 	public void givenEstoyEnElHome() {
 	  hp.open();
 	}
 
 	@When("introduzco una palabra inv\u00E1lida")
 	public void whenIntroduzcoUnaPalabraInválida() {
-	  hp.enterWord();
+	  hp.enterWord("1234");
 	}
 
 	@Then("se presenta el home con un mensaje de palabra inv\u00E1lida")
 	public void thenSePresentaElHomeConUnMensajeDePalabraInválida() {
-	  assertTrue(hp.)
+	  assertTrue(hp.Active());
 	}
 }

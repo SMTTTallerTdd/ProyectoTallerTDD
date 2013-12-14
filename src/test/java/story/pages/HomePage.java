@@ -14,7 +14,7 @@ public class HomePage {
 	}
 
 	public void open(){
-		driver.get("");
+		driver.get("http://localhost:8080/ahorcado");
 	}
 	
 	public boolean Active(){
