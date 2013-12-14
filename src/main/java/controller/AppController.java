@@ -11,7 +11,8 @@ public class AppController {
 
 	@RequestMapping("/")
 	public String home(@RequestParam String name){
-		if(!WordUtils.isValidWord(name))
+		WordUtils utils = new WordUtils();
+		if(!utils.isValidWord(name))
 			return "home";
 		else
 			return "game";

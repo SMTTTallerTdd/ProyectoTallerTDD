@@ -7,10 +7,15 @@
 <title>El Ahorcado</title>
 </head>
 <body>
-Ingrese la palabra:
+<% 
+String error = request.getParameter("error");
+if(error!=null)
+	out.println("<h3>Palabra Inválida</h3>");
+%>
+<p>Ingrese la palabra:
 <form action=beginGame>
 <input type="text" name="word" id="word" />
 <input type="submit" name="begin" id="begin" value="begin"/>
-</form>
+</form></p>
 </body>
 </html>
