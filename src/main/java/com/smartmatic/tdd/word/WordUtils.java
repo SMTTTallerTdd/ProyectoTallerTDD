@@ -16,4 +16,12 @@ public class WordUtils {
 		int total = 4;
 		return (total - opportunities+ "-" + total);
 	}
+
+	public String fillGuess(String word) {
+		int lenght = word.length();
+		String result = "";
+		for(int i = 0;i<lenght;i++)
+			result += "_";
+		return result;
+	}
 }

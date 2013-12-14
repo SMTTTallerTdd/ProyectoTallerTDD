@@ -12,6 +12,7 @@
 <form action="http://localhost:8080/ahorcado/" id="forma">
 <input type="text" name="word" id="word" />
 <input type="submit" name="begin" id="begin" value="begin"/>
+<input type="hidden" name="opportunities" id="opportunities" value="4"/>
 </form></p>
 </body>
 </html>
