@@ -15,4 +15,10 @@ public class GamePage {
 	public boolean Active(){
 		return webDriver.findElement(By.id("guess")) != null;
 	}
+	
+	public void enterLetter(String letter){
+		webDriver.findElement(By.id("letter")).sendKeys("h");
+		webDriver.findElement(By.id("inputletter")).click();
+		}
+	
 }

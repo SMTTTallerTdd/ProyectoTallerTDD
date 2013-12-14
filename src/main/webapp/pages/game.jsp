@@ -9,6 +9,11 @@
 <body>
 Juego
 <h1 id="guess"></h1>
+<p>Ingrese una letra:
+<form action="http://localhost:8080/ahorcado/game" id="forma">
+<input type="text" name="letter" id="letter" />
+<input type="submit" name="inputletter" id="inputletter" value="Input Letter"/>
 </form>
+</p>
 </body>
 </html>
