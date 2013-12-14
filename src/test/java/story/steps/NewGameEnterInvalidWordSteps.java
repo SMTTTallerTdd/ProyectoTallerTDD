@@ -8,6 +8,7 @@ import org.jbehave.core.annotations.When;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import static org.junit.Assert.*;
 import story.pages.HomePage;
 
 public class NewGameEnterInvalidWordSteps {
@@ -27,16 +28,16 @@ public class NewGameEnterInvalidWordSteps {
 	
 	@Given("estoy en el home")
 	public void givenEstoyEnElHome() {
-	  // PENDING
+	  hp.open();
 	}
 
 	@When("introduzco una palabra inv\u00E1lida")
 	public void whenIntroduzcoUnaPalabraInválida() {
-	  // PENDING
+	  hp.enterWord();
 	}
 
 	@Then("se presenta el home con un mensaje de palabra inv\u00E1lida")
 	public void thenSePresentaElHomeConUnMensajeDePalabraInválida() {
-	  // PENDING
+	  assertTrue(hp.)
 	}
 }
