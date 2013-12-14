@@ -45,7 +45,6 @@ public class PlayingLetterMatchSteps {
 
 	@Then("Se pinta la letra introducida en los espacios correspondientes")
 	public void thenSePintaLaLetraIntroducidaEnLosEspaciosCorrespondientes() {
-	  // PENDING
 	}
 
 
