@@ -9,36 +9,39 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import static org.junit.Assert.*;
-
+import story.pages.GamePage;
 import story.pages.HomePage;
 
-public class NewGameSteps {
+public class NewGameEnterValidWordSteps {
 
-	public NewGameSteps() {
+	public NewGameEnterValidWordSteps() {
 		// TODO Auto-generated constructor stub
 	}
 
 	WebDriver webdriver;
 	HomePage hp = null;
+	GamePage gp = null;
+	
 	@BeforeScenario
 	public void setupWebDriver() {
 		webdriver=new FirefoxDriver();
 		hp = new HomePage(webdriver);
+		gp = new GamePage(webdriver);
 	}
-
+	
 	@Given("estoy en el home")
 	public void givenEstoyEnElHome() {
-		hp.open();	  
+	  hp.open();
 	}
 
-	@When("no he hecho nada")
-	public void whenNoHeHechoNada() {
-	  
+	@When("introduzco una palabra v\u00E1lida e inicio el juego")	
+	public void whenIntroduzcoUnaPalabraVálidaEInicioElJuego() {
+	  hp.enterWord("hola");
 	}
 
-	@Then("se muestra la pantalla de Inicio")
-	public void thenSeMuestraLaPantallaDeInicio() {
-	   boolean b = hp.Active();
+	@Then("se presenta la pantalla de juego iniciado")	
+	public void thenSePresentaLaPantallaDeJuegoIniciado() {
+	  boolean b = gp.Active();
 		assertTrue(b);
 	}
 
