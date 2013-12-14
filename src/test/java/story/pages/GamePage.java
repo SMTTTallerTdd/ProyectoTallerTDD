@@ -16,7 +16,13 @@ public class GamePage {
 		return webDriver.findElement(By.id("guess")) != null;
 	}
 	
+	
 	public void playing(String word){
 		webDriver.get("http://localhost:8080/ahorcado/game?name="+word);
 	}
+	public void enterLetter(String letter){
+		webDriver.findElement(By.id("letter")).sendKeys("h");
+		webDriver.findElement(By.id("inputletter")).click();
+		}
+	
 }

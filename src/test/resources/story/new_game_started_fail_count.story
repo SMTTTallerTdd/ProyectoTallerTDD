@@ -1,3 +1,5 @@
+N
+
 Scenario: Pantalla de Juego iniciado - Oportunidades de equivocarme
 
 Given He iniciado mi juego
