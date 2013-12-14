@@ -21,7 +21,7 @@ public class AppController {
 			return "home";				
 		}
 		else{
-			model.addAttribute("name", name);
+			model.addAttribute("word", name);
 			return "game";
 		}
 			
@@ -29,8 +29,13 @@ public class AppController {
 	
 	@RequestMapping("/game")
 	public String game(org.springframework.web.context.request.WebRequest webRequest,ModelMap model){
-		String name= webRequest.getParameter("word");
-		model.addAttribute("name", name);
+		String word= webRequest.getParameter("word");
+		
+		String guess= webRequest.getParameter("guess");
+		String letter =  webRequest.getParameter("letter");
+		model.addAttribute("guess",guess);
+		model.addAttribute("letter",letter);
+		model.addAttribute("word", word);
 		return "game";
 	}
 }

@@ -29,17 +29,18 @@ public class PlayingLetterMatchSteps {
 	
 	@Given("Jugando")
 	public void givenJugando() {
-	  // PENDING
+	  gp.playing("Jugando");
 	}
 
 	@When("Ingreso una letra contenida en la plabra")
 	public void whenIngresoUnaLetraContenidaEnLaPlabra() {
-	  // PENDING
+	  gp.enterLetter("p");
 	}
 
 	@When("No se completa la palabra con la letra introducida")
 	public void whenNoSeCompletaLaPalabraConLaLetraIntroducida() {
-	  // PENDING
+	  gp.Active();
+	  gp.getCurrentWord();
 	}
 
 	@Then("Se pinta la letra introducida en los espacios correspondientes")

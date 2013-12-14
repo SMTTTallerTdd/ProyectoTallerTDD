@@ -24,5 +24,7 @@ public class GamePage {
 		webDriver.findElement(By.id("letter")).sendKeys("h");
 		webDriver.findElement(By.id("inputletter")).click();
 		}
-	
+	public void getCurrentWord(){
+		webDriver.findElement(By.id("guess"));
+	}
 }
