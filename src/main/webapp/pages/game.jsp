@@ -8,11 +8,14 @@
 </head>
 <body>
 Juego
-<h1 id="guess">${guess}</h1>
+<h1 id="guess">${guessVisual}</h1>
 <p>Ingrese una letra:
 <form action="http://localhost:8080/ahorcado/game" id="forma">
 <input type="text" name="letter" id="letter" />
 <input type="submit" name="inputletter" id="inputletter" value="Input Letter"/>
+<input type="hidden" name="guess" id="guess" value="${guess}"/>
+<input type="hidden" name="word" id="guess" value="${word}"/>
+
 </form>
 </p>
 </body>

@@ -11,4 +11,12 @@ public class WordUtils {
 	public boolean isValidWord(String word) {
 		return Pattern.matches("[a-zA-Z]+", word);
 	}
+
+	public String fillGuess(String word) {
+		int lenght = word.length();
+		String result = "";
+		for(int i = 0;i<lenght;i++)
+			result += "_";
+		return result;
+	}
 }
