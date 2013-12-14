@@ -2,6 +2,7 @@ package story.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.internal.selenesedriver.SendKeys;
 
 public class HomePage {
 
@@ -22,5 +23,9 @@ public class HomePage {
 	
 	public void beginGame(){
 		driver.findElement(By.id("begin")).click();
+	}
+	
+	public void enterWord(String word){
+		driver.findElement(By.id("word")).sendKeys(word);
 	}
 }
