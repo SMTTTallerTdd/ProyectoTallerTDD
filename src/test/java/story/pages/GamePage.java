@@ -15,4 +15,8 @@ public class GamePage {
 	public boolean Active(){
 		return webDriver.findElement(By.id("guess")) != null;
 	}
+	
+	public void playing(String word){
+		webDriver.get("http://localhost:8080/ahorcado/game?name="+word);
+	}
 }

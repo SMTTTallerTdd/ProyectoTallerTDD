@@ -26,4 +26,11 @@ public class AppController {
 		}
 			
 	}
+	
+	@RequestMapping("/game")
+	public String game(org.springframework.web.context.request.WebRequest webRequest,ModelMap model){
+		String name= webRequest.getParameter("word");
+		model.addAttribute("name", name);
+		return "game";
+	}
 }
