@@ -1,5 +1,4 @@
 NewGameInvalidWordStory
-
 					 
 Scenario: Introducir palabra inválida
 Given estoy en el home
