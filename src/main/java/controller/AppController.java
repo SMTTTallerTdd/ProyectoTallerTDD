@@ -17,7 +17,7 @@ public class AppController {
 			return "home";
 		WordUtils utils = new WordUtils();
 		if(!utils.isValidWord(name)){
-			model.addAttribute("error", name);
+			model.addAttribute("error", "Palabra Inv&aacute;lida");
 			return "home";				
 		}
 		else{

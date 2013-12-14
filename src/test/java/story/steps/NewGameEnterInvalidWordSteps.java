@@ -34,10 +34,12 @@ public class NewGameEnterInvalidWordSteps {
 	@When("introduzco una palabra inv\u00E1lida")
 	public void whenIntroduzcoUnaPalabraInválida() {
 	  hp.enterWord("1234");
+	  hp.beginGame();
 	}
 
 	@Then("se presenta el home con un mensaje de palabra inv\u00E1lida")
 	public void thenSePresentaElHomeConUnMensajeDePalabraInválida() {
 	  assertTrue(hp.Active());
+	  assertTrue(hp.isInvalid());
 	}
 }
