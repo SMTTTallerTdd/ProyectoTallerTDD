@@ -14,8 +14,8 @@ Juego
 <input type="text" name="letter" id="letter" />
 <input type="submit" name="inputletter" id="inputletter" value="Input Letter"/>
 <input type="hidden" name="guess" id="guess" value="${guess}"/>
-<input type="hidden" name="word" id="guess" value="${word}"/>
-
+<input type="hidden" name="word" id="word" value="${word}"/>
+<input type="hidden" name="opportunities" id="opportunities" value="${opportunities}"/>
 </form>
 </p>
 </body>
