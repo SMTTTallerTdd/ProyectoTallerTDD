@@ -7,11 +7,7 @@
 <title>El Ahorcado</title>
 </head>
 <body>
-<% 
-String error = request.getParameter("error");
-if(error!=null)
-	out.println("<h3>Palabra Inválida</h3>");
-%>
+<h3 id="invalid">${error}</h3>
 <p>Ingrese la palabra:
 <form action="http://localhost:8080/ahorcado/" id="forma">
 <input type="text" name="word" id="word" />
