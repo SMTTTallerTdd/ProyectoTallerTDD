@@ -37,6 +37,7 @@ public class NewGameEnterValidWordSteps {
 	@When("introduzco una palabra v\u00E1lida e inicio el juego")	
 	public void whenIntroduzcoUnaPalabraVálidaEInicioElJuego() {
 	  hp.enterWord("hola");
+	  hp.beginGame();
 	}
 
 	@Then("se presenta la pantalla de juego iniciado")	
