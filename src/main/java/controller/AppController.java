@@ -26,6 +26,7 @@ public class AppController {
 			if(guess==null)
 				guess=utils.fillGuess(word);
 			model.addAttribute("opportunities", 4);			
+			model.addAttribute("opportunitiesText", utils.getOpportunitiesLeftString(4));	
 			model.addAttribute("guess",guess);
 			model.addAttribute("guessVisual",guess);
 			model.addAttribute("word", word);
@@ -58,7 +59,8 @@ public class AppController {
 		model.addAttribute("guess",guess);
 		model.addAttribute("guessVisual",guess);
 		model.addAttribute("letter",letter);
-		model.addAttribute("opportunities", oportunities);			
+		model.addAttribute("opportunities", oportunities);	
+		model.addAttribute("opportunitiesText", utils.getOpportunitiesLeftString(oportunities));	
 		model.addAttribute("word", word);
 		model.addAttribute("goodletter", goodLetter);
 		return "game";
