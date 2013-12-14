@@ -41,7 +41,7 @@ public class NewGameStartedFailCountSteps {
 	public void thenSeMuestraLasOportunidadesRestantesDeEquivocarme() {
 	  String op = gp.GetOpportunitiesLeft();
 	  
-	  assertEquals("1-4", op);
+	  assertEquals("0-4", op);
 	}
 	
 	@AfterScenario
