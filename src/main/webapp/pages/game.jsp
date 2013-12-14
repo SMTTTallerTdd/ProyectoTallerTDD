@@ -8,6 +8,7 @@
 </head>
 <body>
 Juego
+<h1 id="guess">${guess}</h1>
 </form>
 </body>
 </html>
