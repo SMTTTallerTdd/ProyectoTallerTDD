@@ -11,4 +11,9 @@ public class WordUtils {
 	public boolean isValidWord(String word) {
 		return Pattern.matches("[a-zA-Z]+", word);
 	}
+	
+	public String getOpportunitiesLeftString(int opportunities){
+		int total = 4;
+		return (total - opportunities+ "-" + total);
+	}
 }
