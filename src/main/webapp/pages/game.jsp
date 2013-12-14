@@ -18,7 +18,7 @@ Juego
 <input type="hidden" name="opportunities" id="opportunities" value="${opportunities}"/>
 </form>
 <p>
-<h2 id="opportunities">${opportunitiesText}</h2>
+<h2 id="opportunitiestext">${opportunitiesText}</h2>
 </p>
 </body>
 </html>
