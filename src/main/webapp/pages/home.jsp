@@ -13,7 +13,7 @@ if(error!=null)
 	out.println("<h3>Palabra Inválida</h3>");
 %>
 <p>Ingrese la palabra:
-<form action=beginGame>
+<form action="http://localhost:8080/ahorcado/" id="forma">
 <input type="text" name="word" id="word" />
 <input type="submit" name="begin" id="begin" value="begin"/>
 </form></p>
